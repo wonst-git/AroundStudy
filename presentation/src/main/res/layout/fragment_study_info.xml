@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="32dp"
+            android:shrinkColumns="0">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/txtStudyTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/pretendard_bold"
+                    android:textColor="@color/color_282828"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/txtCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/bg_r15_outline_ececec"
+                    android:fontFamily="@font/pretendard_medium"
+                    android:gravity="center"
+                    android:paddingHorizontal="8dp"
+                    android:textColor="@color/color_868686"
+                    android:textSize="13dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/txtStudyContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/pretendard_regular"
+            android:textColor="@color/color_5e5e5e"
+            android:textSize="14dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/bg_r12_outline_ececec"
+            android:orientation="vertical"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="20dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/pretendard_medium"
+                    android:gravity="center_vertical"
+                    android:text="@string/com_study_process"
+                    android:textColor="@color/color_282828"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/txtProcess"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/pretendard_regular"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/color_5e5e5e"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="10dp"
+                    android:fontFamily="@font/pretendard_medium"
+                    android:gravity="center_vertical"
+                    android:text="@string/com_study_place"
+                    android:textColor="@color/color_282828"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/txtPlace"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/pretendard_regular"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/color_5e5e5e"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/pretendard_medium"
+                    android:gravity="center_vertical"
+                    android:text="@string/com_study_time"
+                    android:textColor="@color/color_282828"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/txtMeetTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/pretendard_regular"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/color_5e5e5e"
+                    android:textSize="14dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="22dp"
+            android:background="@color/color_f8f8f8" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/pretendard_bold"
+                android:gravity="center_vertical"
+                android:text="@string/com_together_des"
+                android:textColor="@color/color_282828"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/txtHeadcount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/pretendard_medium"
+                android:textColor="@color/color_282828"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/btnViewMember"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/pretendard_regular"
+                android:padding="10dp"
+                android:text="@string/btn_view_all"
+                android:textColor="@color/color_868686"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/memberList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:paddingHorizontal="14dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_marginVertical="32dp"
+            android:background="@color/color_f8f8f8" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:fontFamily="@font/pretendard_bold"
+            android:text="@string/study_recommend_des"
+            android:textColor="@color/color_282828"
+            android:textSize="18dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/suggestStudyList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="32dp"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:paddingHorizontal="12dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

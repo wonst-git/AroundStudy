@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1070849090185",
+    "project_id": "aroundstudyproject",
+    "storage_bucket": "aroundstudyproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1070849090185:android:fb9cb3efdf0497694d1c58",
+        "android_client_info": {
+          "package_name": "com.aroundstudy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1070849090185-e7s2se4vjqi09n7hojo6mrne53um83i3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXE0X0rksovOMGw1yt8rZ0kb9MbTIbSJM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1070849090185-e7s2se4vjqi09n7hojo6mrne53um83i3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

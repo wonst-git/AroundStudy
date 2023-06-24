@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.aroundstudy">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="29" />
+
+    <application
+        android:name=".Application"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AroundStudy"
+        tools:targetApi="31">
+        <activity
+            android:name=".ui.activity.splash.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AroundStudy.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.access.AccessActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.aroundstudy.ui.activity.start.terms.TermsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.main.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.aroundstudy.ui.activity.start.login.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.aroundstudy.ui.activity.start.login.InputActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.search.SearchAddressActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.aroundstudy.ui.activity.start.login.CompleteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.search.SearchStudyActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.aroundstudy.ui.activity.start.onboarding.OnBoardingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.category.CategoryListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.category.CategoryStudyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.study.StudyDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.study.MemberListActivity"
+            android:exported="false" />
+
+        <!--    kakaoLogin    -->
+        <activity
+            android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="oauth"
+                    android:scheme="kakao${kakaoAppKey}" />
+            </intent-filter>
+        </activity>
+        <service
+            android:name=".service.ASFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+</manifest>

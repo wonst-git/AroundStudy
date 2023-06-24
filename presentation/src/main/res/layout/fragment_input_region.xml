@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/pretendard_medium"
+        android:text="@string/com_region"
+        android:textColor="@color/color_444444"
+        android:textSize="16dp" />
+
+    <LinearLayout
+        android:id="@+id/layoutSetNone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/pretendard_regular"
+            android:text="@string/com_my_location"
+            android:textColor="@color/color_868686"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/txtMyLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawablePadding="4dp"
+            android:fontFamily="@font/pretendard_medium"
+            android:textColor="@color/color_282828"
+            android:textSize="16dp"
+            app:drawableStartCompat="@drawable/ic_maps_pin" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSetLocation"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/sel_btn_outline_default"
+            android:fontFamily="@font/pretendard_regular"
+            android:stateListAnimator="@null"
+            android:text="@string/com_set_my_location"
+            android:textColor="@color/sel_color_btn_outline_txt"
+            android:textSize="16dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSearch"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/sel_btn_outline_default"
+            android:fontFamily="@font/pretendard_regular"
+            android:stateListAnimator="@null"
+            android:text="@string/com_direct_search"
+            android:textColor="@color/sel_color_btn_outline_txt"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutSetRegion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginHorizontal="20dp">
+
+            <TextView
+                android:id="@+id/txtRegion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/sel_edittext_default"
+                android:fontFamily="@font/pretendard_regular"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="16dp"
+                android:text="@string/com_my_location"
+                android:textColor="@color/color_282828"
+                android:textSize="15dp"
+                app:drawableStartCompat="@drawable/ic_location" />
+
+            <ImageButton
+                android:id="@+id/btnClear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="2dp"
+                android:background="@null"
+                android:padding="16dp"
+                android:src="@drawable/ic_action_clear"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_marginVertical="32dp"
+            android:background="@color/color_f8f8f8" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="@font/pretendard_medium"
+            android:text="@string/com_region"
+            android:textColor="@color/color_444444"
+            android:textSize="16dp" />
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/seekRegionRange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_trans"
+            android:max="2"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:progress="1"
+            android:progressDrawable="@drawable/seekbar_progress_default"
+            android:splitTrack="false"
+            android:thumb="@drawable/seekbar_thumb_default" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/pretendard_medium"
+                android:text="@string/com_location_dong_eup_myeon"
+                android:textColor="@color/color_adadad"
+                android:textSize="13dp"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/pretendard_medium"
+                android:gravity="center"
+                android:text="@string/com_location_gun_gu"
+                android:textColor="@color/color_adadad"
+                android:textSize="13dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/pretendard_medium"
+                android:text="@string/com_location_si_do"
+                android:textColor="@color/color_adadad"
+                android:textSize="13dp"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</LinearLayout>

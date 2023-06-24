@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menuHome"
+        android:icon="@drawable/sel_navigation_home"
+        android:title="@string/main_menu_home" />
+    <item
+        android:id="@+id/menuStudy"
+        android:icon="@drawable/sel_navigation_study"
+        android:title="@string/main_menu_study" />
+    <item
+        android:id="@+id/menuChat"
+        android:icon="@drawable/sel_navigation_chat"
+        android:title="@string/main_menu_chat" />
+    <item
+        android:id="@+id/menuMore"
+        android:icon="@drawable/sel_navigation_more"
+        android:title="@string/main_menu_more" />
+</menu>

@@ -1,0 +1,121 @@
+<resources>
+    <!--  Common  -->
+    <string name="app_name">AroundStudy</string>
+
+    <string name="com_nickname">닉네임</string>
+    <string name="com_input_nickname">닉네임을 입력해주세요.</string>
+    <string name="com_gender">성별</string>
+    <string name="com_gender_man">남성</string>
+    <string name="com_gender_women">여성</string>
+    <string name="com_region">지역</string>
+    <string name="com_my_location">현재위치</string>
+    <string name="com_set_my_location">현재 위치로 설정</string>
+    <string name="com_direct_search">직접 검색</string>
+    <string name="com_location_range">위치범위</string>
+    <string name="com_location_dong_eup_myeon">동·읍·면</string>
+    <string name="com_location_gun_gu">군·구</string>
+    <string name="com_location_si_do">시·도</string>
+    <string name="com_process_all">대면·비대면</string>
+    <string name="com_process_f2f">대면</string>
+    <string name="com_process_nf2f">비대면</string>
+    <string name="com_around_search">주변검색</string>
+    <string name="com_sort_recent">최근 개설순</string>
+    <string name="com_study_process">진행방식</string>
+    <string name="com_study_place">장소</string>
+    <string name="com_study_time">시간</string>
+    <string name="com_together_des">함께하고 있어요</string>
+    <string name="com_headcount_format">(%d/%d)</string>
+    <string name="com_member_host">그룹장</string>
+
+    <string name="btn_ok">확인</string>
+    <string name="btn_chat">채팅</string>
+    <string name="btn_join">가입</string>
+    <string name="btn_next">다음</string>
+    <string name="btn_start_study">스터디 시작하기</string>
+    <string name="btn_delete_all">전체삭제</string>
+    <string name="btn_view_all">전체보기</string>
+    <string name="btn_find_study">스터디 찾으러 가기</string>
+
+    <!--  SplashActivity  -->
+    <string name="splash_des">꿈꾸던 자기계발의 시작</string>
+
+    <!--  TermsActivity  -->
+    <string name="terms_title">환영합니다!</string>
+    <string name="terms_des">시작 전에 서비스 사용을 위한\n이용약관에 동의해주세요.</string>
+    <string name="terms_require_format"><b>[필수]</b> %s</string>
+    <string name="terms_optional_format">[선택] %s</string>
+    <string name="terms_agree_all">모두 확인 및 동의합니다.</string>
+
+    <!--  LoginActivity  -->
+    <string name="login_kakao">카카오로 시작하기</string>
+    <string name="login_naver">네이버로 시작하기</string>
+    <string name="login_apple">Apple로 시작하기</string>
+    <string name="login_google">Google로 시작하기</string>
+
+    <!--  AccessActivity  -->
+    <string name="access_rights_guide">앱 접근 권한 안내</string>
+    <string name="access_rights_des">원활하고 편리한 서비스 사용을 위해\n아래의 권한 허용이 필요합니다.</string>
+    <string name="access_alert">알림</string>
+    <string name="access_alert_des">채팅 알림을 위한 권한</string>
+    <string name="access_location">위치</string>
+    <string name="access_location_des">내 주변 스터디 검색을 위한 권한</string>
+    <string name="access_camera">카메라</string>
+    <string name="access_camera_des">채팅, 프로필 사진 촬영을 위한 권한</string>
+    <string name="access_gallery">갤러리</string>
+    <string name="access_gallery_des">채팅, 프로필 사진 등록을 위한 권한</string>
+
+    <!--  MainActivity  -->
+    <string name="main_menu_home">홈</string>
+    <string name="main_menu_study">스터디</string>
+    <string name="main_menu_chat">채팅</string>
+    <string name="main_menu_more">더보기</string>
+
+    <!--  MainActivity - Home  -->
+    <string name="main_around_study">내 주변 스터디</string>
+    <string name="main_new_study">개설</string>
+
+    <!--  MainActivity - Study  -->
+    <string name="main_study_tab_joined">내가 가입한 스터디</string>
+    <string name="main_study_tab_wish">찜한 스터디</string>
+    <string name="main_join_study_none">아직 가입한 스터디가 없어요.\n원하는 스터디를 찾아서 가입해보세요.</string>
+    <string name="main_wish_study_none">찜한 스터디가 없어요.</string>
+
+    <!--  InputActivity  -->
+    <string name="input_title">정보입력</string>
+    <string name="input_location_fail">위치 정보를 불러올 수 없습니다.</string>
+
+    <!--  CompleteActivity  -->
+    <string name="complete_join">회원가입이 완료되었습니다.</string>
+    <string name="complete_join_des">어라운드 스터디에서\n다양한 주제의 스터디 그룹을 찾아보세요!</string>
+
+    <!--  SearchActivity  -->
+    <string name="search_study_hint">원하는 스터디를 검색해보세요.</string>
+    <string name="search_recent_word">최근 검색어</string>
+    <string name="search_hot_study">지금 HOT한 스터디</string>
+
+    <!--  CategoryActivity  -->
+    <string name="category_title">카테고리</string>
+
+    <!--  StudyDetailActivity  -->
+    <string name="study_recommend_des">이런 스터디는 어떠세요?</string>
+    <string name="study_tab_info">정보</string>
+    <string name="study_tab_schedule">일정</string>
+    <string name="study_tab_vote">투표</string>
+    <string name="study_reg_date_foramt">개설일 %s</string>
+    <string name="study_members_count_format">(%d/%d)</string>
+    <string name="study_content_ellipsize">…</string>
+    <string name="study_content_more">더보기</string>
+    <string name="study_member_list_title">스터디 멤버 (%d명)</string>
+
+    <!--  OnBoardingActivity  -->
+    <string-array name="on_boarding_title_array">
+        <item>내 주변에서 진행 중인\n스터디 그룹을 찾아보세요</item>
+        <item>다양한 주제로 스터디를\n직접 개설할 수 있어요</item>
+        <item>지금 로그인하고\n스터디를 시작해보세요.</item>
+    </string-array>
+    <string-array name="on_boarding_des_array">
+        <item>혼자하면서 막혔던 부분들을\n스터디에서 동료들과 함께 고민하고\n해결해보세요!</item>
+        <item>원하는 스터디를 찾지 못했다면,\n직접 새로운 스터디 그룹을 개설하고\n동료들을 모집해보세요.</item>
+        <item>어라운드 스터디에서\n계획한 목표를 달성할 수 있도록\n최선을 다해 돕겠습니다!</item>
+    </string-array>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chkCategory"
+    android:layout_width="wrap_content"
+    android:layout_height="34dp"
+    android:layout_marginEnd="8dp"
+    android:background="@drawable/sel_search_category"
+    android:button="@null"
+    android:clickable="false"
+    android:drawablePadding="4dp"
+    android:fontFamily="@font/pretendard_regular"
+    android:gravity="center_vertical"
+    android:paddingHorizontal="12dp"
+    android:textColor="@color/sel_color_search_category_txt"
+    android:textSize="15dp" />

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/pretendard_medium"
+        android:text="@string/com_nickname"
+        android:textColor="@color/color_444444"
+        android:textSize="16dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp">
+
+        <EditText
+            android:id="@+id/editNickname"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/sel_edittext_default"
+            android:fontFamily="@font/pretendard_regular"
+            android:hint="@string/com_input_nickname"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:paddingHorizontal="16dp"
+            android:textColor="@color/color_282828"
+            android:textColorHint="@color/color_868686"
+            android:textSize="15dp" />
+
+        <ImageButton
+            android:id="@+id/btnClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
+            android:background="@null"
+            android:padding="16dp"
+            android:src="@drawable/ic_action_clear"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
